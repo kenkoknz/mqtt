@@ -1,6 +1,37 @@
 login
+username: kenkoknz1 
 
-key
+aoi key: f4df06a71aba4d1094c14e1d4dedca12
+
+io.adafruit.com 1883
+
+the topic is controlled by feed, so create a feed then use that as the topic. 
+
+feed name: username/feeds/*******
+
+e.g I have set a feed at adafruit io "temp1temp"  the topic becomes  kenkoknz1/feeds/temp1temp
+
+----------------
+Case study: sonoff with espeasy mega, adafruit mqtt, ifttt and google assist 
+ant
+
+unit name: kksonoff1
+
+controller setup:
+
+subscribe: kenkoknz1/feeds/# 
+
+pulish: kenkoknz1/feeds/kk1/%sysname%/%tskname%/%valname%
+
+
+
+
+
+
+
+
+
+
 
 ------------------------------------------
 
