@@ -20,9 +20,20 @@ controller setup:
 
 subscribe: kenkoknz1/feeds/# ; this means the sonoff is listenning for this topic, to turn gpio12 on, we need the command: 
 
-when the sonoff sees kenkoknz1/feeds/cmd with payload "gpio 12,1"  the sonoff will turn gpio12 on.
+kenkoknz1/feeds/cmd with payload "gpio 12,1"
+
+so to turn sonoff on
+
+publish topic: /kksonoff1/cmd with message: gpio,12,1
+
+i.e when the sonoff sees kenkoknz1/feeds/cmd with payload "gpio 12,1"  the sonoff will turn gpio12 on.
 
 
+to turn gpio12 off; 
+
+publish topic:  /kksonoff1/cmd with message: gpio,12,0
+
+---------------------------
 
 pulish: kenkoknz1/feeds/kk1/%sysname%/%tskname%/%valname%
 
