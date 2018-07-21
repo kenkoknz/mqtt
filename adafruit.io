@@ -8,13 +8,15 @@ the topic is controlled by feed, so create a feed then use that as the topic.
 
 feed name: username/feeds/*******
 
-e.g I have set a feed at adafruit io to receive temperature: "temp1temp"  the topic becomes  kenkoknz1/feeds/temp1temp
+e.g create a feed at adafruit io to receive temperature: "temp1temp"  the topic becomes  kenkoknz1/feeds/temp1temp
 
-create a feed to turn sonof on/off: kenkoknz1/feeds/cmd and send payload of gpio,12,1 or gpio,12,0
+create a feed in adafruit to turn sonof on/off: kenkoknz1/feeds/cmd and send payload of gpio,12,1 or gpio,12,0
 
-To test, in node-red send a mqttt message to adafruit.io with topic  kenkoknz1/feeds/cmd and payload gpio,12,1 to trun on light
+To test, in node-red send a mqttt message to adafruit.io with topic  kenkoknz1/feeds/cmd and payload gpio,12,1 to trun on light.
 
+usinf ifttt on google assistant recognising a phrase  "turn on switch one", trigger adafruit (feed = cmd) with dat 
 
+a gpio,12,1
 
 
 ----------------
