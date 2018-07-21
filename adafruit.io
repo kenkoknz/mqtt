@@ -8,9 +8,14 @@ the topic is controlled by feed, so create a feed then use that as the topic.
 
 feed name: username/feeds/*******
 
-e.g I have set a feed at adafruit io receive temperature: "temp1temp"  the topic becomes  kenkoknz1/feeds/temp1temp
+e.g I have set a feed at adafruit io to receive temperature: "temp1temp"  the topic becomes  kenkoknz1/feeds/temp1temp
 
-create a feed to turn sonof on/off: kenkoknz1/feeds/cmd
+create a feed to turn sonof on/off: kenkoknz1/feeds/cmd and send payload of gpio,12,1 or gpio,12,0
+
+To test, in node-red send a mqttt message to adafruit.io with topic  kenkoknz1/feeds/cmd and payload gpio,12,1 to trun on light
+
+
+
 
 ----------------
 Case study: sonoff with espeasy mega, adafruit mqtt, ifttt and google assist 
