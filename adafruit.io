@@ -1,8 +1,7 @@
 login
 username: kenkoknz1 
 
-aoi key: f4df06a71aba4d1094c14e1d4dedca12
-
+aoi key: 
 io.adafruit.com 1883
 
 the topic is controlled by feed, so create a feed then use that as the topic. 
